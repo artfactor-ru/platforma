@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>Создание ученика</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content" />
+    <link rel="shortcut icon" href="./assets/favicons/favicon.ico" />
+    <link rel="icon" href="./assets/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/favicons/favicon-96x96.png" type="image/png" sizes="96x96" />
+    <link rel="icon" href="./assets/favicons/favicon-192x192.png" type="image/png" sizes="192x192" />
+    <link rel="icon" href="./assets/favicons/favicon-512x512.png" type="image/png" sizes="512x512" />
+    <link rel="apple-touch-icon" href="./assets/favicons/apple-touch-icon.png" sizes="180x180" />
+    <link rel="stylesheet" href="./css/bundle.min.css" />
+  </head>
+  <body>
+    <div class="site">
+      <header class="header">
+        <div class="container">
+          <div class="block">
+            <div class="slot-1">
+              <a class="logo" href="./home.html">
+                <picture>
+                  <img src="./assets/images/system/logo.svg" alt="" />
+                </picture>
+              </a>
+            </div>
+            <div class="slot-2">
+              <nav class="navigation-top">
+                <ul>
+                  <li class="has-submenu">
+                    <a href="#" aria-haspopup="true"> Расписание школы </a>
+
+                    <ul class="submenu">
+                      <li>
+                        <a href="./schedule-day.html"> Расписание школы на день </a>
+                      </li>
+
+                      <li>
+                        <a href="./schedule-week.html"> Расписание школы на неделю </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="">
+                    <a href="./groups.html"> Список групп </a>
+                  </li>
+
+                  <li class="">
+                    <a href="./courses.html"> Каталог курсов </a>
+                  </li>
+
+                  <li class="">
+                    <a href="./glossary.html"> Глоссарий </a>
+                  </li>
+
+                  <li class="">
+                    <a href="./teachers.html"> Педагогический состав </a>
+                  </li>
+
+                  <li class="">
+                    <a href="./students.html"> Учащиеся </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="slot-3">
+              <div class="widget-messages">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15 28.125C23.2852 28.125 30 21.8262 30 14.0625C30 6.29883 23.2852 0 15 0C6.71484 0 0 6.29883 0 14.0625C0 17.2441 1.125 20.1738 3.02344 22.5293L0.164062 27.9375C-0.117188 28.4648 -0.0292969 29.1094 0.375 29.5488C0.779297 29.9883 1.41797 30.123 1.96289 29.8887L8.90039 26.918C10.7637 27.6914 12.8262 28.125 15 28.125ZM7.5 12.1875C7.99728 12.1875 8.47419 12.385 8.82582 12.7367C9.17746 13.0883 9.375 13.5652 9.375 14.0625C9.375 14.5598 9.17746 15.0367 8.82582 15.3883C8.47419 15.74 7.99728 15.9375 7.5 15.9375C7.00272 15.9375 6.52581 15.74 6.17417 15.3883C5.82254 15.0367 5.625 14.5598 5.625 14.0625C5.625 13.5652 5.82254 13.0883 6.17417 12.7367C6.52581 12.385 7.00272 12.1875 7.5 12.1875ZM15 12.1875C15.4973 12.1875 15.9742 12.385 16.3258 12.7367C16.6775 13.0883 16.875 13.5652 16.875 14.0625C16.875 14.5598 16.6775 15.0367 16.3258 15.3883C15.9742 15.74 15.4973 15.9375 15 15.9375C14.5027 15.9375 14.0258 15.74 13.6742 15.3883C13.3225 15.0367 13.125 14.5598 13.125 14.0625C13.125 13.5652 13.3225 13.0883 13.6742 12.7367C14.0258 12.385 14.5027 12.1875 15 12.1875ZM20.625 14.0625C20.625 13.5652 20.8225 13.0883 21.1742 12.7367C21.5258 12.385 22.0027 12.1875 22.5 12.1875C22.9973 12.1875 23.4742 12.385 23.8258 12.7367C24.1775 13.0883 24.375 13.5652 24.375 14.0625C24.375 14.5598 24.1775 15.0367 23.8258 15.3883C23.4742 15.74 22.9973 15.9375 22.5 15.9375C22.0027 15.9375 21.5258 15.74 21.1742 15.3883C20.8225 15.0367 20.625 14.5598 20.625 14.0625Z"
+                    fill="white"
+                  />
+                </svg>
+                <div class="counter"></div>
+              </div>
+            </div>
+            <div class="slot-4">
+              <div class="widget-notifications">
+                <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.125 0C12.0879 0 11.25 0.837891 11.25 1.875V2.0625C6.97266 2.92969 3.75 6.71484 3.75 11.25V12.5215C3.75 15.3398 2.78906 18.0762 1.03125 20.2793L0.457031 20.9941C0.158203 21.3633 0 21.8203 0 22.2949C0 23.4434 0.931641 24.375 2.08008 24.375H24.1641C25.3125 24.375 26.2441 23.4434 26.2441 22.2949C26.2441 21.8203 26.0859 21.3633 25.7871 20.9941L25.2129 20.2793C23.4609 18.0762 22.5 15.3398 22.5 12.5215V11.25C22.5 6.71484 19.2773 2.92969 15 2.0625V1.875C15 0.837891 14.1621 0 13.125 0ZM9.49219 27.1875C9.9082 28.8047 11.3789 30 13.125 30C14.8711 30 16.3418 28.8047 16.7578 27.1875H9.49219Z"
+                    fill="white"
+                  />
+                </svg>
+                <div class="counter"></div>
+              </div>
+            </div>
+            <div class="slot-5">
+              <div class="widget-account">
+                <button class="toggle" type="button" aria-label="Открыть меню аккаунта" aria-expanded="false">
+                  <svg class="icon-arrow" width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.61719 8.38574C7.10547 8.87402 7.89844 8.87402 8.38672 8.38574L14.6367 2.13574C15.125 1.64746 15.125 0.854492 14.6367 0.366211C14.1484 -0.12207 13.3555 -0.12207 12.8672 0.366211L7.5 5.7334L2.13281 0.370117C1.64453 -0.118164 0.851562 -0.118164 0.363281 0.370117C-0.125 0.858398 -0.125 1.65137 0.363281 2.13965L6.61328 8.38965L6.61719 8.38574Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg class="icon-account" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M23.3789 22.5117C22.084 20.2617 19.6523 18.75 16.875 18.75H13.125C10.3477 18.75 7.91602 20.2617 6.62109 22.5117C8.68359 24.8086 11.6719 26.25 15 26.25C18.3281 26.25 21.3164 24.8027 23.3789 22.5117ZM0 15C0 11.0218 1.58035 7.20644 4.3934 4.3934C7.20644 1.58035 11.0218 0 15 0C18.9782 0 22.7936 1.58035 25.6066 4.3934C28.4196 7.20644 30 11.0218 30 15C30 18.9782 28.4196 22.7936 25.6066 25.6066C22.7936 28.4196 18.9782 30 15 30C11.0218 30 7.20644 28.4196 4.3934 25.6066C1.58035 22.7936 0 18.9782 0 15ZM15 15.9375C16.1189 15.9375 17.1919 15.493 17.9831 14.7019C18.7743 13.9107 19.2188 12.8376 19.2188 11.7188C19.2188 10.5999 18.7743 9.52681 17.9831 8.73564C17.1919 7.94447 16.1189 7.5 15 7.5C13.8811 7.5 12.8081 7.94447 12.0169 8.73564C11.2257 9.52681 10.7812 10.5999 10.7812 11.7188C10.7813 12.8376 11.2257 13.9107 12.0169 14.7019C12.8081 15.493 13.8811 15.9375 15 15.9375Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+                <div class="dropdown" aria-hidden="true">
+                  <a href="./profile.html">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.6207 0.371094C7.73788 -0.207031 8.2496 -0.625 8.84335 -0.625H11.1793C11.773 -0.625 12.2848 -0.207031 12.4019 0.371094L12.9684 3.10547C13.5191 3.33984 14.0348 3.64062 14.5035 3.99609L17.1519 3.11719C17.7144 2.92969 18.3316 3.16406 18.6285 3.67969L19.7965 5.70312C20.0934 6.21875 19.9879 6.86719 19.5426 7.26172L17.4605 9.11328C17.4957 9.40234 17.5113 9.69922 17.5113 10C17.5113 10.3008 17.4918 10.5977 17.4605 10.8867L19.5465 12.7422C19.9918 13.1367 20.0934 13.7891 19.8004 14.3008L18.6324 16.3242C18.3355 16.8359 17.7184 17.0742 17.1559 16.8867L14.5074 16.0078C14.0348 16.3633 13.5191 16.6602 12.9723 16.8984L12.4098 19.6289C12.2887 20.2109 11.7769 20.625 11.1871 20.625H8.85116C8.25741 20.625 7.7457 20.207 7.62851 19.6289L7.06601 16.8984C6.51523 16.6641 6.00351 16.3633 5.53085 16.0078L2.8707 16.8867C2.3082 17.0742 1.69101 16.8398 1.39413 16.3242L0.226165 14.3008C-0.0707095 13.7852 0.0347592 13.1367 0.480072 12.7422L2.56601 10.8867C2.53085 10.5977 2.51523 10.3008 2.51523 10C2.51523 9.69922 2.53476 9.40234 2.56601 9.11328L0.480072 7.25781C0.0347592 6.86328 -0.0668033 6.21094 0.226165 5.69922L1.39413 3.67578C1.69101 3.16016 2.3082 2.92578 2.8707 3.11328L5.51913 3.99219C5.99179 3.63672 6.50742 3.33984 7.05429 3.10156L7.6207 0.371094ZM10.0113 13.125C10.4217 13.1235 10.8278 13.0411 11.2063 12.8826C11.5849 12.7242 11.9285 12.4927 12.2176 12.2014C12.5067 11.9102 12.7356 11.5648 12.8912 11.1851C13.0468 10.8053 13.1261 10.3987 13.1246 9.98828C13.1231 9.5779 13.0407 9.17184 12.8822 8.79329C12.7238 8.41473 12.4923 8.0711 12.201 7.78201C11.9098 7.49291 11.5644 7.26402 11.1847 7.10839C10.8049 6.95277 10.3983 6.87346 9.98788 6.875C9.5775 6.87654 9.17144 6.95889 8.79289 7.11736C8.41434 7.27583 8.0707 7.50731 7.78161 7.79858C7.49251 8.08985 7.26362 8.43521 7.10799 8.81494C6.95237 9.19467 6.87306 9.60134 6.8746 10.0117C6.87614 10.4221 6.9585 10.8282 7.11696 11.2067C7.27543 11.5853 7.50691 11.9289 7.79818 12.218C8.08945 12.5071 8.43481 12.736 8.81454 12.8916C9.19427 13.0472 9.60094 13.1265 10.0113 13.125Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <span>Настройки профиля</span>
+                  </a>
+                  <a href="./auth.html">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19.7266 10.6641C20.0938 10.2969 20.0938 9.70312 19.7266 9.33984L14.1016 3.71094C13.832 3.44141 13.4297 3.36328 13.0781 3.50781C12.7266 3.65234 12.5 3.99609 12.5 4.375V7.5H8.125C7.08984 7.5 6.25 8.33984 6.25 9.375V10.625C6.25 11.6602 7.08984 12.5 8.125 12.5H12.5V15.625C12.5 16.0039 12.7266 16.3477 13.0781 16.4922C13.4297 16.6367 13.832 16.5586 14.1016 16.2891L19.7266 10.6641ZM6.25 3.75C6.94141 3.75 7.5 3.19141 7.5 2.5C7.5 1.80859 6.94141 1.25 6.25 1.25H3.75C1.67969 1.25 0 2.92969 0 5V15C0 17.0703 1.67969 18.75 3.75 18.75H6.25C6.94141 18.75 7.5 18.1914 7.5 17.5C7.5 16.8086 6.94141 16.25 6.25 16.25H3.75C3.05859 16.25 2.5 15.6914 2.5 15V5C2.5 4.30859 3.05859 3.75 3.75 3.75H6.25Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <span>Выйти</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slot-6">
+              <button class="menu-open" type="button" data-toggle="menu">
+                <svg width="32" height="25" viewBox="0 0 32 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="3" width="26" height="3" rx="1.5" fill="currentColor" />
+                  <rect x="11" y="11" width="18" height="3" rx="1.5" fill="currentColor" />
+                  <rect x="3" y="19" width="26" height="3" rx="1.5" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav class="navigation-personal">
+        <ul>
+          <li class="">
+            <a href="./schedule-personal.html">
+              <span class="icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10 5.51953V17.6016L10.0195 17.5938C12.1523 16.707 14.4414 16.25 16.75 16.25H17.5V3.75H16.75C15.1016 3.75 13.4648 4.07812 11.9414 4.71094C11.2852 4.98438 10.6367 5.25391 10 5.51953ZM9.01953 2.40234L10 2.8125L10.9805 2.40234C12.8086 1.64062 14.7695 1.25 16.75 1.25H18.125C19.1602 1.25 20 2.08984 20 3.125V16.875C20 17.9102 19.1602 18.75 18.125 18.75H16.75C14.7695 18.75 12.8086 19.1406 10.9805 19.9023L10.4805 20.1094C10.1719 20.2383 9.82812 20.2383 9.51953 20.1094L9.01953 19.9023C7.19141 19.1406 5.23047 18.75 3.25 18.75H1.875C0.839844 18.75 0 17.9102 0 16.875V3.125C0 2.08984 0.839844 1.25 1.875 1.25H3.25C5.23047 1.25 7.19141 1.64062 9.01953 2.40234Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+
+              <span>Мое расписание</span>
+            </a>
+          </li>
+
+          <li class="">
+            <a href="./groups-personal.html">
+              <span class="icon" aria-hidden="true">
+                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.5 4.375C2.5 3.80047 2.61316 3.23156 2.83303 2.70076C3.05289 2.16996 3.37515 1.68766 3.78141 1.28141C4.18766 0.875151 4.66996 0.552891 5.20076 0.333027C5.73156 0.113163 6.30047 0 6.875 0C7.44953 0 8.01844 0.113163 8.54924 0.333027C9.08004 0.552891 9.56234 0.875151 9.96859 1.28141C10.3748 1.68766 10.6971 2.16996 10.917 2.70076C11.1368 3.23156 11.25 3.80047 11.25 4.375C11.25 4.94953 11.1368 5.51844 10.917 6.04924C10.6971 6.58004 10.3748 7.06234 9.96859 7.46859C9.56234 7.87485 9.08004 8.19711 8.54924 8.41697C8.01844 8.63684 7.44953 8.75 6.875 8.75C6.30047 8.75 5.73156 8.63684 5.20076 8.41697C4.66996 8.19711 4.18766 7.87485 3.78141 7.46859C3.37515 7.06234 3.05289 6.58004 2.83303 6.04924C2.61316 5.51844 2.5 4.94953 2.5 4.375ZM0 17.5C0 13.7031 3.07812 10.625 6.875 10.625C10.6719 10.625 13.75 13.7031 13.75 17.5V17.7344C13.75 18.6406 13.0156 19.375 12.1094 19.375H1.64062C0.734375 19.375 0 18.6406 0 17.7344V17.5ZM16.875 1.875C17.8696 1.875 18.8234 2.27009 19.5267 2.97335C20.2299 3.67661 20.625 4.63044 20.625 5.625C20.625 6.61956 20.2299 7.57339 19.5267 8.27665C18.8234 8.97991 17.8696 9.375 16.875 9.375C15.8804 9.375 14.9266 8.97991 14.2233 8.27665C13.5201 7.57339 13.125 6.61956 13.125 5.625C13.125 4.63044 13.5201 3.67661 14.2233 2.97335C14.9266 2.27009 15.8804 1.875 16.875 1.875ZM16.875 11.25C19.9805 11.25 22.5 13.7695 22.5 16.875V17.75C22.5 18.6484 21.7734 19.375 20.875 19.375H15.2188C15.4766 18.8867 15.625 18.3281 15.625 17.7344V17.5C15.625 15.4883 14.9453 13.6367 13.8086 12.1602C14.6914 11.5859 15.7461 11.25 16.875 11.25Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+
+              <span>Мои группы</span>
+            </a>
+          </li>
+
+          <li class="">
+            <a href="./statistics.html">
+              <span class="icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.5 2.5C2.5 1.80859 1.94141 1.25 1.25 1.25C0.558594 1.25 0 1.80859 0 2.5V15.625C0 17.3516 1.39844 18.75 3.125 18.75H18.75C19.4414 18.75 20 18.1914 20 17.5C20 16.8086 19.4414 16.25 18.75 16.25H3.125C2.78125 16.25 2.5 15.9688 2.5 15.625V2.5ZM18.3828 5.88281C18.8711 5.39453 18.8711 4.60156 18.3828 4.11328C17.8945 3.625 17.1016 3.625 16.6133 4.11328L12.5 8.23047L10.2578 5.99219C9.76953 5.50391 8.97656 5.50391 8.48828 5.99219L4.73828 9.74219C4.25 10.2305 4.25 11.0234 4.73828 11.5117C5.22656 12 6.01953 12 6.50781 11.5117L9.375 8.64453L11.6172 10.8867C12.1055 11.375 12.8984 11.375 13.3867 10.8867L18.3867 5.88672L18.3828 5.88281Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+
+              <span>Статистика</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="main">
+        <section class="student-create section white-frame half">
+          <h1 class="title">Данные ученика</h1>
+
+          <form class="form">
+            <div class="grid">
+              <div class="avatar-upload">
+                <div class="avatar" aria-hidden="true">
+                  <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M69.2783 67.1537C66.1058 61.6412 60.1482 57.9375 53.3438 57.9375H44.1562C37.3518 57.9375 31.3942 61.6412 28.2217 67.1537C33.2748 72.7811 40.5961 76.3125 48.75 76.3125C56.9039 76.3125 64.2252 72.7667 69.2783 67.1537ZM12 48.75C12 39.0033 15.8719 29.6558 22.7638 22.7638C29.6558 15.8719 39.0033 12 48.75 12C58.4967 12 67.8442 15.8719 74.7362 22.7638C81.6281 29.6558 85.5 39.0033 85.5 48.75C85.5 58.4967 81.6281 67.8442 74.7362 74.7362C67.8442 81.6281 58.4967 85.5 48.75 85.5C39.0033 85.5 29.6558 81.6281 22.7638 74.7362C15.8719 67.8442 12 58.4967 12 48.75ZM48.75 51.0469C51.4913 51.0469 54.1202 49.9579 56.0586 48.0195C57.997 46.0812 59.0859 43.4522 59.0859 40.7109C59.0859 37.9697 57.997 35.3407 56.0586 33.4023C54.1202 31.464 51.4913 30.375 48.75 30.375C46.0087 30.375 43.3798 31.464 41.4414 33.4023C39.503 35.3407 38.4141 37.9697 38.4141 40.7109C38.4141 43.4522 39.503 46.0812 41.4414 48.0195C43.3798 49.9579 46.0087 51.0469 48.75 51.0469Z"
+                      fill="#8AB991"
+                    />
+                  </svg>
+                </div>
+                <label class="button secondary size-md rounded-lg" for="student-avatar">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 7.34784 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0C7.34784 0 4.8043 1.05357 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C4.8043 18.9464 7.34784 20 10 20ZM9.0625 13.4375V10.9375H6.5625C6.04297 10.9375 5.625 10.5195 5.625 10C5.625 9.48047 6.04297 9.0625 6.5625 9.0625H9.0625V6.5625C9.0625 6.04297 9.48047 5.625 10 5.625C10.5195 5.625 10.9375 6.04297 10.9375 6.5625V9.0625H13.4375C13.957 9.0625 14.375 9.48047 14.375 10C14.375 10.5195 13.957 10.9375 13.4375 10.9375H10.9375V13.4375C10.9375 13.957 10.5195 14.375 10 14.375C9.48047 14.375 9.0625 13.957 9.0625 13.4375Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  <span>загрузить фото</span>
+                </label>
+                <input id="student-avatar" name="avatar" type="file" accept="image/*" />
+              </div>
+
+              <div class="field">
+                <label class="label" for="student-last-name"> Фамилия<span class="mark" aria-hidden="true">*</span></label>
+
+                <div class="control-row">
+                  <input type="text" class="input primary size-md rounded-sm" id="student-last-name" name="last_name" placeholder="Укажите фамилию" required />
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="student-first-name"> Имя<span class="mark" aria-hidden="true">*</span></label>
+
+                <div class="control-row">
+                  <input type="text" class="input primary size-md rounded-sm" id="student-first-name" name="first_name" placeholder="Укажите имя" required />
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="student-native-language"> Родной язык ученика</label>
+
+                <div class="control-row">
+                  <div class="select-wrap">
+                    <select
+                      class="select wide primary size-md rounded-sm"
+                      data-nice-select
+                      data-searchable="false"
+                      data-searchtext="Поиск"
+                      data-selectedtext="выбрано"
+                      id="student-native-language"
+                      name="native_language"
+                    >
+                      <option value="" selected disabled>Выберите язык</option>
+
+                      <option value="ru">Русский</option>
+
+                      <option value="en">Английский</option>
+
+                      <option value="es">Испанский</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="student-birth-date"> Дата рождения</label>
+
+                <div class="control-row">
+                  <input type="date" class="input primary size-md rounded-sm" id="student-birth-date" name="birth_date" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="student-phone"> Телефон</label>
+
+                <div class="control-row">
+                  <input type="tel" class="input primary size-md rounded-sm" id="student-phone" name="phone" placeholder="+7" data-mask="phone" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="student-email"> Email</label>
+
+                <div class="control-row">
+                  <input type="email" class="input primary size-md rounded-sm" id="student-email" name="email" placeholder="Укажите эл. почту" />
+                </div>
+              </div>
+
+              <div class="title">Дополнительная информация</div>
+              <div class="subtitle">Мессенджер</div>
+
+              <div class="field no-label">
+                <label class="label" for="student-messenger-max"> max</label>
+
+                <div class="control-row">
+                  <input type="text" class="input primary size-md rounded-sm" id="student-messenger-max" name="messenger-max" placeholder="max" />
+                </div>
+              </div>
+
+              <div class="field no-label">
+                <label class="label" for="student-messenger-telegram"> telegram</label>
+
+                <div class="control-row">
+                  <input type="text" class="input primary size-md rounded-sm" id="student-messenger-telegram" name="messenger-telegram" placeholder="telegram" />
+                </div>
+              </div>
+
+              <div class="field no-label">
+                <label class="label" for="student-description"> Описание</label>
+
+                <div class="control-row">
+                  <textarea class="textarea primary size-md rounded-sm" id="student-description" name="description" placeholder="Введите дополнителную информацию" rows="5"> </textarea>
+                </div>
+              </div>
+
+              <div class="actions">
+                <button class="button primary size-md rounded-sm is-disabled" type="submit" disabled>
+                  <span>Сохранить</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <div class="menu" data-dropdown="menu">
+        <div class="inner">
+          <div class="menu-header">
+            <span class="title"> Меню </span>
+            <button class="menu-close" type="button" data-toggle="menu">
+              <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.15234 2.86719C1.66406 2.37891 0.871094 2.37891 0.382812 2.86719C-0.105469 3.35547 -0.105469 4.14844 0.382812 4.63672L5.75 10L0.386719 15.3672C-0.101563 15.8555 -0.101563 16.6484 0.386719 17.1367C0.875 17.625 1.66797 17.625 2.15625 17.1367L7.51953 11.7695L12.8867 17.1328C13.375 17.6211 14.168 17.6211 14.6563 17.1328C15.1445 16.6445 15.1445 15.8516 14.6563 15.3633L9.28906 10L14.6523 4.63281C15.1406 4.14453 15.1406 3.35156 14.6523 2.86328C14.1641 2.375 13.3711 2.375 12.8828 2.86328L7.51953 8.23047L2.15234 2.86719Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="menu-navigation">
+            <nav class="navigation-mobile">
+              <ul>
+                <li class="has-submenu">
+                  <div class="row">
+                    <a href="#">
+                      <span>Расписание школы</span>
+                    </a>
+                    <button class="toggle" type="button" aria-label="Открыть подменю" aria-expanded="false">
+                      <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.61719 8.38574C7.10547 8.87402 7.89844 8.87402 8.38672 8.38574L14.6367 2.13574C15.125 1.64746 15.125 0.854492 14.6367 0.366211C14.1484 -0.12207 13.3555 -0.12207 12.8672 0.366211L7.5 5.7334L2.13281 0.370117C1.64453 -0.118164 0.851562 -0.118164 0.363281 0.370117C-0.125 0.858398 -0.125 1.65137 0.363281 2.13965L6.61328 8.38965L6.61719 8.38574Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="wrap">
+                    <ul class="submenu">
+                      <li>
+                        <a href="./schedule-day.html"> Расписание школы на день </a>
+                      </li>
+
+                      <li>
+                        <a href="./schedule-week.html"> Расписание школы на неделю </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="">
+                  <a href="./groups.html">
+                    <span>Список групп</span>
+                  </a>
+                </li>
+
+                <li class="">
+                  <a href="./courses.html">
+                    <span>Каталог курсов</span>
+                  </a>
+                </li>
+
+                <li class="">
+                  <a href="./glossary.html">
+                    <span>Глоссарий</span>
+                  </a>
+                </li>
+
+                <li class="">
+                  <a href="./teachers.html">
+                    <span>Педагогический состав</span>
+                  </a>
+                </li>
+
+                <li class="">
+                  <a href="./students.html">
+                    <span>Учащиеся</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="menu-navigation">
+            <nav class="navigation-mobile small">
+              <ul>
+                <li class="">
+                  <a href="./schedule-personal.html">
+                    <span>Мое расписание</span>
+                  </a>
+                </li>
+
+                <li class="">
+                  <a href="./groups-personal.html">
+                    <span>Мои группы</span>
+                  </a>
+                </li>
+
+                <li class="">
+                  <a href="./statistics.html">
+                    <span>Статистика</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="overlay" aria-hidden="true"></div>
+    </div>
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>
